@@ -102,8 +102,8 @@ fi
 mkdir -p ../output
 
 
-python ../aivivn/change_structure.py --indir=../data/vn_celeb_face_recognition/train --des_file_path=../data/vn_celeb_face_recognition/train.csv --outdir=../data/convert/train
-python ../aivivn/change_structure.py --indir=../data/vn_celeb_face_recognition/test --oneperperson=True --outdir=../data/convert/test
+python ../aivivn/change_structure.py --indir=$origin_data_dir/train --des_file_path=$origin_data_dir/train.csv --outdir=../data/convert/train
+python ../aivivn/change_structure.py --indir=$origin_data_dir/test --oneperperson=True --outdir=../data/convert/test
 
 python ../aivivn/train.py --data-dir=../data/convert/train --model-path=../models/model.pkl --idx2path=../models/idx2path.pkl --vector-dir=../models/vector/
 
