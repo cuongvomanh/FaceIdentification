@@ -65,7 +65,7 @@ Ta tìm được threshold tốt nhất là 1.46 với độ chính xác trên 9
 python ../aivivn/view_data.py --data-dir=../data/convert/train --vector-dir=../models/vector/ --threshold=1.24 --output-path=../output/data_view.png
 ```
 Số ảnh của từng người trong bộ dữ liệu train:
-![image number per person](https://github.com/cuongvomanh/FaceIdentification/tree/master/resources/file_number2n.png)
+![image number per person](https://raw.githubusercontent.com/cuongvomanh/FaceIdentification/master/resources/file_number2n.png)
 
 Sau đó dựa vào những đề xuất này, ta tiến hành lọc bỏ những ảnh nhiễu trong dữ liệu train (khoảng 50 ảnh).
 
@@ -88,5 +88,5 @@ Kết quả submiss cho thấy 1.35 là threshold có kết quả tốt nhất (
 for f in ../output/*.csv;do a=${f//.csv/};python ../aivivn/review_result.py --input_path=$f --output_path=$a.jpg;done
 ```
 Với threshold = 1.35, ta có thống kê sau:
-![image number per person](https://github.com/cuongvomanh/FaceIdentification/tree/master/resources/135.jpg)
+![image number per person](https://raw.githubusercontent.com/cuongvomanh/FaceIdentification/master/resources/135.jpg)
 ----
